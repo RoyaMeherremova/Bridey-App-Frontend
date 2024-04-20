@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/scss/style.css">
+    <title>Blog Detail</title>
+</head>
+
+<body>
+     <!-- Start Header -->
+     <header>
+        <div id="overlay" class="d-none"></div>
+        <section id="nav-area">
+            <div class="container">
+                <div class="row nav-area-content">
+                    <div class="col-4 d-lg-block d-none">
+                        <div class="contact">
+                            <div class="left-side">
+                                <i class="fa-solid fa-headphones-simple"></i>
+                            </div>
+                            <div class="right-side">
+                                <span class="text">Call us</span>
+                                <span class="phone">+84 1800 33355</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-md-12 col-12">
+                        <div class="logo">
+                            <a href=""><img src="./assets/images/Logo.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-4  d-lg-block d-none">
+                        <div class="right-area">
+                            <div class="search"><i class="fa-solid fa-magnifying-glass icon" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"></i></div>
+                            <div><i class="fa-regular fa-user icon user-icon"></i></div>
+                            <span class="count-wishlist">0</span>
+                            <div><a href="wishlist.html"><i class="fa-regular fa-heart icon"></i></a></div>
+                            <span class="count-basket">0</span>
+                            <div class="basket"><a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                            </div>
+                        </div>
+                        <div class="login-register d-none">
+                            <ul>
+                                <li><a href="login.html">Login</a></li><span>/</span>
+                                <li><a href="register.html">Register</a></li>
+
+                            </ul>
+                        </div>
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Search</h1><img
+                                            src="./assets/images/search-icon.png">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <input type="text">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="side-bar">
+            <div class="close"> <span>Close</span></div>
+            <ul>
+                <a>
+                    <li class="activ">Home</li>
+                </a>
+                <a>
+                    <li>Shop</li>
+                </a>
+                <a>
+                    <li>About</li>
+                </a>
+                <a>
+                    <li>Blog</li>
+                </a>
+                <a>
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+        <section id="responsive-nav-area" class="d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-2 d-lg-none">
+                        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+                    </div>
+                    <div class="col-md-10 col-10 d-lg-none">
+                        <div class="right-area">
+                            <div class="search responsive-icon"><i class="fa-solid fa-magnifying-glass icon"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal-responsive"></i></div>
+                            <div class="responsive-icon"><i class="fa-regular fa-user icon user-icon-responsive"></i>
+                            </div>
+                            <span class="count-wishlist">0</span>
+                            <div clas="responsive-icon"><a href="wishlist.html"><i
+                                        class="fa-regular fa-heart heart-icon"></i></a></div>
+                            <span class="count-basket">0</span>
+                            <div class="basket responsive-icon"><a href="basket.html"><i
+                                        class="fa-solid fa-basket-shopping"></i></a>
+                            </div>
+                        </div>
+                        <div class="login-register-responsive d-none">
+                            <ul>
+                                <li><a href="login.html">Login</a></li><span>/</span>
+                                <li><a href="register.html">Register</a></li>
+
+                            </ul>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal responsive-modal fade" id="exampleModal-responsive" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <form>
+                                            <input type="text" placeholder="Search...">
+                                        </form>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="nav-down">
+            <div class="container">
+                <div class="d-lg-block d-none">
+                    <ul class="top-menu">
+                        <img class="decor-img d-none" src="./assets/images/decor2.png">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <img class="decor-img d-none" src="./assets/images/decor.png">
+                    </ul>
+                    <div class="right-area d-none">
+                        <div class="search"><i class="fa-solid fa-magnifying-glass icon"></i></div>
+                        <span class="count-wishlist">0</span>
+                        <div><a href="wishlist.html"><i class="fa-regular fa-heart icon"></i></a></div>
+                        <span class="count-basket">0</span>
+                        <div class="basket"><a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <main>
+        <section id="wrapper-blogDetail" style="background-image: url('./assets/images/bg-breadcrumb.jpg');">
+            <div class="container page_text">
+                <h1 style="margin-bottom: 25px;">Blog Detail</h1>
+                <ul>
+                    <li>
+                        <a href="home.html">
+                    <li>Home</li><i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><span>Blog Detail</span></li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="site-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-sm-12 col-md-12">
+                        <div class="post-thumbnail" style="background-image: url('./assets/images//blog-cart1.webp');">
+                        </div>
+                        <div class="entry-header">
+                            <span class="blog-category">Getting Started</span>
+                            <span class="post-author">POST BY admin</span>
+                            <span class="posted-on"><i class="fa-regular fa-calendar"></i>May 8, 2020</span>
+                        </div>
+                        <div class="entry-content">
+                            <p>Looking for fun wedding transportation ideas for your big day? The logistics of getting
+                                to and from your wedding venue (and in some cases, a separate reception site, as well)
+                                are something everyone will have to figure out. <span id="more-161"></span></p>
+                            <p>It might be easiest to assume everyone will just drive themselves, but in many
+                                situations, that may not be the best (or safest!) plan. Which is why it’s a very smart
+                                and thoughtful idea to make room in your wedding budget for transportation for yourself
+                                and your guests. Depending on your preferences and budget, there are many different
+                                options to consider. Get inspired with these wedding transportation ideas for the bride
+                                and groom, as well as our top tips for getting your guests around!South Gate Manor
+                                offers a number of services and all-inclusive packages to ensure that your wedding day
+                                is the most enjoyable day of your life. Some of the event items that can be rented
+                                include aisle decor, centerpieces, furniture, tent accessories and a photo booth. South
+                                Gate Manor offers the following services:
+                            </p>
+                        </div>
+                        <div class="related-posts-title">
+                            <h3>Related Posts</h3>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="related-blog">
+                                        <img src="./assets/images/blog-3.jpg">
+                                        <h5>Lovely Bride Dallas Wedding Dress Try-on Session</h5>
+                                        <span class="post-info-author-text">
+                                            By </span>
+                                        <span class="author-text">
+                                            Admin </span>
+                                        <span class="date">
+                                            28.03.2018 </span>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="related-blog">
+                                        <img src="./assets/images/blog-3.jpg">
+                                        <h5>Lovely Bride Dallas Wedding Dress Try-on Session</h5>
+                                        <span class="post-info-author-text">
+                                            By </span>
+                                        <span class="author-text">
+                                            Admin </span>
+                                        <span class="date">
+                                            28.03.2018 </span>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-4 col-sm-12 col-md-6">
+                                    <div class="related-blog">
+                                        <img src="./assets/images/blog-3.jpg">
+                                        <h5>Lovely Bride Dallas Wedding Dress Try-on Session</h5>
+                                        <span class="post-info-author-text">
+                                            By </span>
+                                        <span class="author-text">
+                                            Admin </span>
+                                        <span class="date">
+                                            28.03.2018 </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="comment-list-wrap">
+                            <span class="count-comment"> 3 Comments </span>
+                            <div class="comment-body d-flex">
+                                <div class="comment-meta-left">
+                                    <img src="./assets/images/userr.png">
+                                </div>
+                                <div class="comment-meta-right">
+                                    <div id="div-comment-5" class="comment-content">
+                                        <div class="commentmetadata">
+                                            <span>Joe Doe</span>
+                                            <span class="date">May 8, 2020</span>
+                                        </div>
+
+                                        <div class="comment-text">
+                                            <p>This is exactly what i was looking for, thank you so much for these
+                                                tutorials</p>
+                                        </div>
+                                        <div class="reply"><a class="comment-reply-link">Reply</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-body d-flex">
+                                <div class="comment-meta-left">
+                                    <img src="./assets/images/userr.png">
+                                </div>
+                                <div class="comment-meta-right">
+                                    <div id="div-comment-5" class="comment-content">
+                                        <div class="commentmetadata">
+                                            <span>Joe Doe</span>
+                                            <span class="date">May 8, 2020</span>
+                                        </div>
+
+                                        <div class="comment-text">
+                                            <p>This is exactly what i was looking for, thank you so much for these
+                                                tutorials</p>
+                                        </div>
+                                        <div class="reply"><a class="comment-reply-link">Reply</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-body d-flex">
+                                <div class="comment-meta-left">
+                                    <img src="./assets/images/userr.png">
+                                </div>
+                                <div class="comment-meta-right">
+                                    <div id="div-comment-5" class="comment-content">
+                                        <div class="commentmetadata">
+                                            <span>Joe Doe</span>
+                                            <span class="date">May 8, 2020</span>
+                                        </div>
+
+                                        <div class="comment-text">
+                                            <p>This is exactly what i was looking for, thank you so much for these
+                                                tutorials</p>
+                                        </div>
+                                        <div class="reply"><a class="comment-reply-link">Reply</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="top-respond">Leave a Reply</span>
+                        <p>Your email address will not be published<span>*</span></p>
+                        <form>
+                            <div class="inputs-area">
+                                <input id="author" name="author" type="text" placeholder="Your FullName *" value=""
+                                    size="30" aria-required="true">
+                                <input id="email" name="email" type="email" placeholder="Email Address *" value=""
+                                    size="30" aria-required="true">
+                            </div>
+                            <textarea id="comment" placeholder="Comment"></textarea>
+                            <div class="comment-form">
+                                <input type="checkbox"><label>Save my name, email, and website in this browser for the
+                                    next time I comment.</label>
+                            </div>
+                            <button>Post Comment</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-md-12">
+                        <div class="categories-2">
+                            <span class="title">Blog Categories</span>
+                            <ul>
+                                <li class="cat-item"><a>Dress Details</a><span>(4)</span></li>
+                                <li class="cat-item"><a>Dress Details</a><span>(4)</span></li>
+                                <li class="cat-item"><a>Dress Details</a><span>(4)</span></li>
+                                <li class="cat-item"><a>Dress Details</a><span>(4)</span></li>
+
+                            </ul>
+                        </div>
+                        <div class="recent-posts">
+                            <span class="title">Recent Posts</span>
+                            <ul>
+                                <li>
+                                    <div class="recent-posts-thumbnail">
+                                        <a>
+                                            <img src="./assets/images/blog-cart1.webp">
+                                        </a>
+                                    </div>
+                                    <div class="recent-posts-info">
+                                        <a class="post-title">
+                                            <span>26 Wedding Guest Dresses for Spring Weddings</span>
+                                        </a>
+                                        <span class="post-date">May 8, 2020</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="recent-posts-thumbnail">
+                                        <a>
+                                            <img src="./assets/images/blog-cart1.webp">
+
+                                        </a>
+                                    </div>
+                                    <div class="recent-posts-info">
+                                        <a class="post-title">
+                                            <span>26 Wedding Guest Dresses for Spring Weddings</span>
+                                        </a>
+                                        <span class="post-date">May 8, 2020</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="recent-posts-thumbnail">
+                                        <a>
+                                            <img src="./assets/images/blog-cart1.webp">
+                                               
+
+                                        </a>
+                                    </div>
+                                    <div class="recent-posts-info">
+                                        <a class="post-title">
+                                            <span>26 Wedding Guest Dresses for Spring Weddings</span>
+                                        </a>
+                                        <span class="post-date">May 8, 2020</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="widget_tag_cloud">
+                            <span class="title">Tags</span>
+                            <div class="tagcloud">
+                                <a>Advertising</a>
+                                <a>Advertising</a>
+                                <a>Advertising</a>
+                                <a>Advertising</a>
+                                <a>Advertising</a>
+                                <a>Advertising</a>
+                                <a>Advertising</a>
+                                <a>Advertising</a>
+                                <a>Advertising</a>
+                                <a>Advertising</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="footer-top-blog-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12 col-md-3 col-12">
+                        <div class="service-item">
+                            <img src="./assets/images/service-1.png">
+                            <span class="title">Free Shipping </span>
+                            <p>Once receiving your order, we will turn your products around in 3-5 business days.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 col-md-3 col-12">
+                        <div class="service-item">
+                            <img src="./assets/images/service-2.png">
+                            <span class="title">Free Shipping </span>
+                            <p>We accept returns for freshly purchased products within 7 days from the payment.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 col-md-3 col-12">
+                        <div class="service-item">
+                            <img src="./assets/images/service-3.png">
+                            <span class="title">Custom Sizing</span>
+                            <p>Order your dress with free custom sizing.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 col-md-3 col-12">
+                        <div class="service-item">
+                            <img src="./assets/images/service-4.png">
+                            <span class="title">Superb Quality</span>
+                            <p>We make commitments that the quality of our products will and always will be superb.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- End Main -->
+
+    <!-- Start Footer -->
+    <footer>
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-12 col-12 col-md-2">
+                        <div class="ApColumn ">
+                            <div class="block ApLink ApBlockLink">
+                                <ul>
+                                    <li><a href="blog.html" target="_self">Blog </a></li>
+                                    <li><a href="https://demo73.leotheme.com/prestashop/leo_bridey_demo/en/content/4-about-us"
+                                            target="_self">About Us </a></li>
+                                    <li><a href="#" target="_self">Careers</a></li>
+                                    <li><a href="#" target="_self"> Partner</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-2 col-sm-12 col-12 col-md-3">
+                        <div class="ApColumn ">
+
+                            <div class="block ApLink ApBlockLink">
+                                <ul>
+                                    <li><a href="#" target="_self">Size chart</a></li>
+                                    <li><a href="https://demo73.leotheme.com/prestashop/leo_bridey_demo/en/guest-tracking"
+                                            target="_self"> Track order </a></li>
+                                    <li><a href="#" target="_self">Dress Guide </a></li>
+                                    <li><a href="https://demo73.leotheme.com/prestashop/leo_bridey_demo/en/content/1-delivery"
+                                            target="_self">Shipping </a></li>
+                                    <li><a href="https://demo73.leotheme.com/prestashop/leo_bridey_demo/en/content/5-secure-payment"
+                                            target="_self">Payment Methods</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-12 col-md-3">
+                        <div class="logo">
+                            <img src="./assets/images/Logo.svg">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-12 col-md-4">
+                        <div class="block-information">
+                            <h4 class="title_block">Showroom</h4>
+                            <p>Box 565, Charlestown, Nevis, West Indies,Caribbean</p>
+                            <ul>
+                                <li>Monday - Friday: <span>8am - 4pm </span></li>
+                                <li>Saturday: <span>9am - 5pm</span></li>
+                            </ul>
+                        </div>
+                        <div class="block-social">
+                            <h6 class="title_block">
+                                Follow us
+                            </h6>
+                            <ul>
+                                <li class="facebook"><a href="#" title="Facebook" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="twitter"><a href="#" title="Twitter" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="pinterest"><a href="#" title="Pinterest" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-brands fa-pinterest"></i></a>
+                                </li>
+                                <li class="instagram"><a href="#" title="Instagram" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <section id="footer-bottom">
+            <div class="container">
+                <div class="block-copyright ApRawHtml d-lg-block d-none">
+                    Copyright © 2020 All Rights Reserved. <span>Bridey.</span> </div>
+            </div>
+        </section>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/blogDetail.js"></script>
+    <script src="./assets/js/common.js"></script>
+</body>
+
+</html>
